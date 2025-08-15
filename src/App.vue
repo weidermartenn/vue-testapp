@@ -9,9 +9,6 @@ import UniverPresetSheetsCoreRuRU from '@univerjs/preset-sheets-core/locales/ru-
 import UniverPresetSheetsCoreEnUS from '@univerjs/preset-sheets-core/locales/en-US';
 import { createUniver, LocaleType, mergeLocales } from '@univerjs/presets';
 import '@univerjs/preset-sheets-core/lib/index.css';
-
-// Добавляем необходимые плагины
-import { UniverSheetsUIPlugin } from '@univerjs/sheets-ui';
 import '@univerjs/sheets-ui/lib/index.css';
 
 onMounted(() => {
@@ -29,7 +26,6 @@ onMounted(() => {
     ],
   });
 
-  // Создаем книгу с тестовыми данными
   univerAPI.createWorkbook({
     id: 'workbook-1',
     name: 'Тестовая книга',
